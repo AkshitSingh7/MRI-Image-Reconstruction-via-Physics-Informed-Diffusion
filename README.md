@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-> **High-fidelity MRI reconstruction from 4x undersampled data using a Physics-Informed Conditional Diffusion Model. Implements a spectral Data Consistency (DC) layer during inference to enforce K-Space validity, achieving a +5.31 dB PSNR improvement.**
+> **High-fidelity MRI reconstruction from 4x undersampled data using a Physics-Informed Conditional Diffusion Model. Implements a spectral Data Consistency (DC) layer during inference to enforce K-Space validity, achieving a +2.15 dB PSNR improvement.**
 
 ---
 
@@ -20,7 +20,7 @@ We evaluated the model on the **IXI Brain Dataset** (T1-weighted) with 4x accele
 
 | Metric | Input (Blurry/Undersampled) | Physics-Guided AI Output | Improvement |
 | :--- | :---: | :---: | :---: |
-| **PSNR** (Peak Signal-to-Noise Ratio) | 24.85 dB | **30.16 dB** | **+5.31 dB** 🚀 |
+| **PSNR** (Peak Signal-to-Noise Ratio) | 28.01 dB | **30.16 dB** | **+2.15 dB** 🚀 |
 | **SSIM** (Structural Similarity) | 0.82 | **0.91** | **+11%** |
 
 ---
@@ -73,7 +73,9 @@ MRI-Reconstruction-Diffusion/
 * **Type:** Denoising Diffusion Probabilistic Model (DDPM)
 * **Backbone:** U-Net with Attention Gates at resolutions 16/8
 * **Channels:** `[64, 128, 256]` with `num_head_channels=32`
-* **Compute:** Optimized for NVIDIA A100 GPUs using Automatic Mixed Precision (`fp16`).
+
+
+* **Compute:** Optimized for NVIDIA L4/A100 GPUs using Automatic Mixed Precision (`fp16`).
 * **Optimization:** Adam Optimizer, Cosine Annealing, Exponential Moving Average (EMA).
 
 ---
@@ -116,7 +118,7 @@ python inference.py --checkpoint checkpoints/model_epoch_100.pth --strategy refi
 ---
 
 ## 📸 Visualization
-![Result Comparison](assets/result_comparison.png)
+![Result Comparison](assets/result_comparison.png) 
 ---
 
 ## 📜 Dataset & Citation
