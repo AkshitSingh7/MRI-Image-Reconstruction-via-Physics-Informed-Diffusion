@@ -142,7 +142,6 @@ If you use this code, please credit the repository:
   journal = {GitHub repository},
   howpublished = {\url{[https://github.com/AkshitSingh7/MRI-Image-Reconstruction-via-Physics-Informed-Diffusion](https://github.com/AkshitSingh7/MRI-Image-Reconstruction-via-Physics-Informed-Diffusion)}}
 }
-
 ```
 
 ```
