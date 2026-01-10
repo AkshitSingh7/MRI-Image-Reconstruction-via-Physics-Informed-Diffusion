@@ -50,18 +50,18 @@ We implement a hard **Data Consistency (DC) Projection Layer** during the revers
 ```bash
 MRI-Reconstruction-Diffusion/
 ├── assets/                  # Images for README (Result comparison)
-├── checkpoints/             # Saved model weights (Epoch 50, 100)
-├── dataset/                 # IXI Dataset (T1-weighted NIfTI files)
-├── results/                 # Output images and metric logs
+├── checkpoints/             
+├── dataset/                
+├── results/             
 ├── src/
 │   ├── physics.py           # FFT simulator & Data Consistency functions
 │   ├── model.py             # MONAI DiffusionModelUNet definition
 │   └── utils.py             # PSNR/SSIM metrics and visualization
+├── .gitignore               
 ├── train.py                 # Main training loop (with Mixed Precision)
 ├── inference.py             # Physics-guided refinement script
-├── requirements.txt         # Dependencies
-└── README.md                # This file
-
+├── requirements.txt         
+└── README.md               
 ```
 
 ---
