@@ -74,7 +74,7 @@ MRI-Reconstruction-Diffusion/
 * **Channels:** `[64, 128, 256]` with `num_head_channels=32`
 
 
-* **Compute:** Optimized for NVIDIA L4 GPUs using Automatic Mixed Precision (`fp16`).
+* **Compute:** Optimized for NVIDIA A100 GPUs using Automatic Mixed Precision (`fp16`).
 * **Optimization:** Adam Optimizer, Cosine Annealing, Exponential Moving Average (EMA).
 
 ---
