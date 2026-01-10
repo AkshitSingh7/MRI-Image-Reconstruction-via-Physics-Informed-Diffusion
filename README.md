@@ -114,6 +114,14 @@ To reconstruct a sample image using the Data Consistency strategy:
 python inference.py --checkpoint checkpoints/model_epoch_100.pth --strategy refinement
 
 ```
+### 5. Model Weights
+The trained model weights (Epoch 100) are available for download:
+* [**Download Pre-trained Weights**](https://drive.google.com/file/d/1FDwKbuU5iWKz9rvRT-qnFWCo90H15ms2/view?usp=drive_link)
+
+Place the downloaded `model_epoch_100.pth` file inside the `checkpoints/` folder:
+```bash
+mkdir checkpoints
+mv ~/Downloads/model_epoch_100.pth checkpoints/
 
 ---
 
