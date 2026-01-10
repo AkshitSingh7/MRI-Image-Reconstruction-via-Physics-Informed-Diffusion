@@ -116,7 +116,7 @@ python inference.py --checkpoint checkpoints/model_epoch_100.pth --strategy refi
 ---
 
 ## 📸 Visualization
-
+![Result Comparison](assets/result_comparison.png)
 ---
 
 ## 📜 Dataset & Citation
