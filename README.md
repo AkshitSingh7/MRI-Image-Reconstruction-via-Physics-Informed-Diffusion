@@ -97,24 +97,7 @@ pip install -r requirements.txt
 
 ```
 
-### 3. Run Training
-
-The script automatically downloads the IXI dataset and starts training.
-
-```bash
-python train.py --epochs 100 --batch_size 16
-
-```
-
-### 4. Run Physics-Guided Inference
-
-To reconstruct a sample image using the Data Consistency strategy:
-
-```bash
-python inference.py --checkpoint checkpoints/model_epoch_100.pth --strategy refinement
-
-```
-### 5. Model Weights
+### 3. Model Weights
 The trained model weights (Epoch 100) are available for download:
 * [**Download Pre-trained Weights**](https://drive.google.com/file/d/1FDwKbuU5iWKz9rvRT-qnFWCo90H15ms2/view?usp=drive_link)
 
@@ -124,6 +107,25 @@ mkdir checkpoints
 mv ~/Downloads/model_epoch_100.pth checkpoints/
 ---
 ```
+
+### 4. Run Training
+
+The script automatically downloads the IXI dataset and starts training.
+
+```bash
+python train.py --epochs 100 --batch_size 16
+
+```
+
+### 5. Run Physics-Guided Inference
+
+To reconstruct a sample image using the Data Consistency strategy:
+
+```bash
+python inference.py --checkpoint checkpoints/model_epoch_100.pth --strategy refinement
+
+```
+
 
 ## 📸 Visualization
 ![Result Comparison](assets/result_comparison.png) 
