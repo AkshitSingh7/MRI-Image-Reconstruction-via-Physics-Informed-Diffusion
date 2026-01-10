@@ -97,15 +97,17 @@ pip install -r requirements.txt
 
 ```
 
-### 3. Model Weights
-The trained model weights (Epoch 100) are available for download:
-* [**Download Pre-trained Weights**](https://drive.google.com/file/d/1FDwKbuU5iWKz9rvRT-qnFWCo90H15ms2/view?usp=drive_link)
+### 3. Download Model Weights
+Because the model weights are large, they are hosted externally. 
+1. [**Download the Pre-trained Weights (Epoch 100)**](https://drive.google.com/file/d/1FDwKbuU5iWKz9rvRT-qnFWCo90H15ms2/view?usp=drive_link)
+2. Move the downloaded file into the `checkpoints/` folder:
 
-Place the downloaded `model_epoch_100.pth` file inside the `checkpoints/` folder:
 ```bash
+# If the checkpoints folder doesn't exist, create it
 mkdir checkpoints
+
+# Move the file (adjust the path if your download is elsewhere)
 mv ~/Downloads/model_epoch_100.pth checkpoints/
----
 ```
 
 ### 4. Run Training
