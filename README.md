@@ -122,8 +122,8 @@ Place the downloaded `model_epoch_100.pth` file inside the `checkpoints/` folder
 ```bash
 mkdir checkpoints
 mv ~/Downloads/model_epoch_100.pth checkpoints/
-
 ---
+```
 
 ## 📸 Visualization
 ![Result Comparison](assets/result_comparison.png) 
@@ -150,8 +150,4 @@ If you use this code, please credit the repository:
   journal = {GitHub repository},
   howpublished = {\url{[https://github.com/AkshitSingh7/MRI-Image-Reconstruction-via-Physics-Informed-Diffusion](https://github.com/AkshitSingh7/MRI-Image-Reconstruction-via-Physics-Informed-Diffusion)}}
 }
-```
-
-```
-
 ```
