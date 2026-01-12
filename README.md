@@ -49,7 +49,7 @@ We implement a hard **Data Consistency (DC) Projection Layer** during the revers
 ## 📂 Directory Structure
 ```bash
 MRI-Reconstruction-Diffusion/
-├── assets/                  # Images for README (Result comparison)
+├── assets/                 
 ├── checkpoints/             
 ├── dataset/                
 ├── results/             
