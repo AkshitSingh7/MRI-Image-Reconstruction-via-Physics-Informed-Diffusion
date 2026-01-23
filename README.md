@@ -58,7 +58,7 @@ MRI-Reconstruction-Diffusion/
 │   ├── model.py             # MONAI DiffusionModelUNet definition
 │   └── utils.py             # PSNR/SSIM metrics and visualization
 ├── .gitignore               
-├── train.py                 # Main training loop (with Mixed Precision)
+├── train.py                 # Main training loop
 ├── inference.py             # Physics-guided refinement script
 ├── requirements.txt         
 └── README.md               
